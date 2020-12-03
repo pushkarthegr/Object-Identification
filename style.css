@@ -1,0 +1,45 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+.title{
+    background-color: blue;
+    color:aqua;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    padding:20px 40px;
+    height:140px;
+}
+#main{
+    width:90%;
+    margin:10px auto !important;
+    font-family: 'Indie Flower', cursive;
+    height:830px;
+}
+.output{
+    width:90%;
+    font-family: 'Indie Flower', cursive;
+}
+.designer{
+    background-color: darkblue;
+    color:white;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+}
+#Camera,#result{
+    width:310;
+    height:290;
+    border:2px solid white;
+    box-shadow: 5px 10px 18px white;
+    margin:0px auto;
+}
+#URL,#FILE{
+    display:none;
+}
+#resultImage{
+    width:310px;
+}

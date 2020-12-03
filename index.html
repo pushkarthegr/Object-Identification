@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>CASE STUDY</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="col-xs-12 title">
+                <h1>Image Identificaton case study<img src="case.png" style="width:100px"></h1>
+            </div>
+            <br>
+            <center>
+                <div class="btn btn-primary" id="main">
+                    <select id="dropdown" class="btn btn-info" onclick="dropdown()"><option>Capture Image</option><option>Type Url</option><option>Choose File</option></select>
+                    <Br>
+                        <br>
+                    <div id="Camera"></div>
+                        <input type="url" id="URL" class="form-control" placeholder="Type the Url">
+                        <input type="file" id="FILE" class="form-control" accept="image/*" multiple="false">
+                        <hr>
+                        <div id="result"></div>
+                        <hr>
+                        <button class="btn btn-info" onclick="capture()">Capture Image</button>
+                        <br>
+                        <br>
+                        <button class="btn btn-info" onclick="identify()">Identify</button>
+                </div>
+            </center>
+            <br>
+            <center>
+                <div class="btn btn-primary output">
+                    <h4 class="col-sm-6 col-xs-12">
+                        <img src="blub.gif" style="width: 70px;">
+                        <span id="case1"></span>
+                        <br>
+                        <br>
+                        <span id="case2"></span>
+                    </h4>
+                </div>    
+            </center>
+            <br>
+            <br>
+            <div class="designer">
+                Designed by Pushkar Gupta :)
+            </div>
+            <script src="main.js"></script>
+    </body>
+</html>
